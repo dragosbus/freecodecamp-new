@@ -61,4 +61,111 @@ body {
     border-radius: 5px;
     border: none;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    padding: 1rem 2rem;
+}
+
+.role,
+.radio,
+.like,
+.comment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.role h4,
+.role select {
+    width: 100%;
+    margin: 1rem auto;
+    margin-bottom: 1rem;
+    font-size: 1.55rem;
+    font-weight: 300;
+}
+
+.role select,
+.like select {
+    height: 3.5rem;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.25);
+    background: #fff;
+    font-size: 1.55rem;
+}
+
+.radio-group {
+    margin: 2rem 0;
+}
+
+.radio-group label,
+.checkbox-group label {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.radio-group input,
+.checkbox-group input {
+    width: 1.5rem;
+    height: 1.5rem;
+    background: none;
+    box-shadow: none;
+    margin-left: 1rem;
+}
+
+.radio h4,
+.like h4,
+.checkbox-group h4,
+.comment h4{
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 1.55rem;
+}
+
+.like select {
+    width: 100%;
+}
+
+.checkbox-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#submit {
+    background: #162BB7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem 2.5rem;
+    display: block;
+    margin: 1rem auto;
+    cursor: pointer;
+}
+
+/* Media Querys */
+
+@media (min-width: 660px) {
+    .role,
+    .like,
+    .comment,
+    .checkbox-group,
+    .radio {
+        justify-content: space-between;
+        align-items: center;
+    }
+    .role h4,
+    .role select,
+    .like h4,
+    .like select,
+    .comment h4,
+    .checkbox-group h4,
+    .group-labels,
+    .radio-group,
+    .radio h4,
+    .comment textarea {
+        width: 45%;
+    }
 }
