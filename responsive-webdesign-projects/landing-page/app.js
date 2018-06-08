@@ -7,6 +7,12 @@ const View = (function() {
         const hamburgerMenu = document.querySelector(".hamburger");
 
         hamburgerMenu.addEventListener("click", togglerNav);
+        //hide navigation when a link is clicked
+        navbar.addEventListener('click',e=>{
+            if(e.target.tagName === "A") {
+                togglerNav();
+            }
+        });
     };
 
     const togglerNav = () =>{
