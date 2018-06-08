@@ -210,6 +210,69 @@ main {
     right: 0;
 }
 
+#features {
+    padding: 2rem 1rem;
+}
+
+#features h2 {
+    font-size: 1.65rem;
+    margin-bottom: 2rem;
+    color: rgba(17, 17, 17, 0.863);
+    text-align: center;
+}
+#features p {
+    font-size: 1.4rem;
+    letter-spacing: 1.15px;
+    line-height: 1.4;
+    color: rgba(12, 7, 32, 0.863);
+    text-align: center;
+}
+
+#features ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#features ul li {
+    width: 100%;
+    box-shadow: 0 0 0.5rem rgba(2,2,2,0.25);
+    padding: 1rem;
+    margin: 2rem auto;
+    transition: border-top 0.45s ease-in;
+}
+
+#features ul li:hover {
+    border-top: 2px solid rgb(27, 182, 73);
+}
+
+#features ul li span {
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    margin: 1rem auto;
+}
+
+i.fas {
+    font-size: 4rem;
+}
+
+#features ul li h4 {
+    font-size: 1.5rem;
+    color: rgb(32, 32, 32);
+    text-align: center;
+    margin: 1rem 0;
+}
+
+#features ul li p {
+    font-size: 1.4rem;
+    color: rgb(32, 32, 32);
+    text-align: center;
+    margin: 2rem 0;
+    line-height: 1.5;
+}
+
 /* Media querys */
 
 @media (min-width: 660px) {
@@ -261,6 +324,10 @@ main {
     .work:last-child div {
         order: 2;
     }
+
+    #features ul li {
+        width: 45%;
+    }
 }
 
 @media (min-width: 900px) {
@@ -294,11 +361,19 @@ main {
     main {
         margin-top: 8rem;
     }
+
+    #features ul li {
+        width: 30%;
+    }
 }
 
 @media (min-width: 1100px) {
     .intro img {
         width: 30%;
         height: 60rem;
+    }
+
+    #features ul li {
+        width: 20%;
     }
 } 
