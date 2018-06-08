@@ -273,6 +273,91 @@ i.fas {
     line-height: 1.5;
 }
 
+#prices {
+    background: rgba(228, 225, 225, 0.534);
+    padding: 1rem;
+}
+
+#prices div {
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.25);
+    margin: 2rem auto;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+#prices div h4 {
+    font-size: 1.65rem;
+    color: rgba(12, 7, 32, 0.863);
+    margin-left: 10%;
+}
+
+#prices div h5 {
+    font-size: 2rem;
+    color: rgba(12, 7, 32, 0.863);
+    margin: 1rem auto;
+    margin-left: 10%;
+    font-weight: 300;
+}
+
+#prices div ul {
+    list-style-type: circle;
+    margin: 4rem 0;
+}
+
+#prices div ul li {
+    width: 50%;
+    text-align: center;
+    margin: 1rem auto;
+    font-size: 1.35rem;
+}
+
+#prices div:first-child ul li:nth-child(3),
+#prices div:first-child ul li:nth-child(4),
+#prices div:first-child ul li:last-child {
+    color: rgba(14, 13, 13, 0.589);
+}
+
+.btn {
+    width: 15rem;
+    border: none;
+    background: none;
+    border-radius: 0.5rem;
+    padding: 1rem 2.5rem;
+    cursor: pointer;
+}
+
+.default {
+    border: 1px solid rgba(29, 29, 29, 0.897);
+    display: block;
+    margin: 1rem auto;
+    position: relative;
+}
+
+.default span {
+    width: 0%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.default:hover span {
+    animation-name: hover-btn;
+    animation-duration: 0.55s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: both;
+}
+
+.success {
+    background: rgb(20, 187, 75);
+    color: #fff;
+    display: block;
+    margin: 1rem auto;
+}
+
 /* Media querys */
 
 @media (min-width: 660px) {
@@ -328,7 +413,16 @@ i.fas {
     #features ul li {
         width: 45%;
     }
-}
+
+    #prices {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #prices div {
+        width: 40%;
+    }
 
 @media (min-width: 900px) {
 
@@ -365,6 +459,10 @@ i.fas {
     #features ul li {
         width: 30%;
     }
+
+    #prices div {
+        width: 30%;
+    }
 }
 
 @media (min-width: 1100px) {
@@ -376,4 +474,14 @@ i.fas {
     #features ul li {
         width: 20%;
     }
-} 
+} }
+
+@keyframes hover-btn {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 148px;
+        background: rgba(29, 29, 29, 0.897);
+    }
+}

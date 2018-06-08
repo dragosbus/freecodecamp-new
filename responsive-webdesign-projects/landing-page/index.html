@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Landing-page</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -36,9 +37,9 @@
                 <p>Orci nullam tempor sapien donec ipsum integer at porta auctor integer congue magna lacus tempus magna</p>
             </div>
             <img src="img/bank.png" alt="Intro Photo">
-            <form>
-                <input type="email" class="subscribe-email">
-                <button type="submit" class="subscribe">Get Started</button>
+            <form id="form" action="https://www.freecodecamp.com/dragosbus">
+                <input type="email" class="subscribe-email" id="email" placeholder="Subscribe" name="dragosbus">
+                <input id="submit" type="submit" class="subscribe" value="Get Started">
             </form>
         </div>
     </header>
@@ -56,7 +57,8 @@
             <div class="work">
                 <div>
                     <h2>Experienced and Skilled</h2>
-                    <p>An enim nullam tempor sapien gravida donec enim ipsum porta justo integer at odio velna vitae auctor integer congue magna at pretium purus pretium ligula rutrum luctus risus</p>
+                    <p>An enim nullam tempor sapien gravida donec enim ipsum porta justo integer at odio velna vitae auctor
+                        integer congue magna at pretium purus pretium ligula rutrum luctus risus</p>
                 </div>
                 <img src="img/data.png" alt="Data image">
             </div>
@@ -66,30 +68,67 @@
             <p>Aliquam a augue suscipit, luctus neque purus ipsum neque dolor primis libero tempus, tempor posuere ligula varius</p>
             <ul>
                 <li>
-                    <span><i class="fas fa-piggy-bank"></i></span>
+                    <span>
+                        <i class="fas fa-piggy-bank"></i>
+                    </span>
                     <h4>Free Trial</h4>
                     <p>Ligula risus auctor tempus dolor lacinia</p>
                 </li>
                 <li>
-                    <span><i class="fas fa-sliders-h"></i></span>
+                    <span>
+                        <i class="fas fa-sliders-h"></i>
+                    </span>
                     <h4>User Friendly</h4>
                     <p>Ultrice ligula risus auctor tempus dolor lacinia</p>
                 </li>
                 <li>
-                    <span><i class="fas fa-envelope"></i></span>
+                    <span>
+                        <i class="fas fa-envelope"></i>
+                    </span>
                     <h4>Mailer Engine</h4>
                     <p>Feugiat primis in lacinia risus an auctor</p>
                 </li>
                 <li>
-                    <span><i class="fas fa-bell"></i></span>
+                    <span>
+                        <i class="fas fa-bell"></i>
+                    </span>
                     <h4>Notifications</h4>
                     <p>Semper lacus cursus porta primis ultrice</p>
                 </li>
             </ul>
         </section>
+        <section id="prices">
+            <div class="offer">
+                <h4>Bank Free</h4>
+                <h5>Free</h5>
+                <ul>
+                    <li>20 Users Tasks</li>
+                    <li>5 GB of Storage</li>
+                    <li>Theme Customization</li>
+                    <li>Free Email Support</li>
+                    <li>Security Suite</li>
+                </ul>
+                <button class="btn default">
+                    <p>Get Started</p>
+                    <span></span>
+                </button>
+            </div>
+            <div class="offer">
+                <h4>Bank Pro</h4>
+                <h5>$ 2.99 / <span>monthly</span></h5>
+                <ul>
+                    <li>20 Users Tasks</li>
+                    <li>10 GB of Storage</li>
+                    <li>Theme Customization</li>
+                    <li>Free Email Support</li>
+                    <li>Security Suite</li>
+                </ul>
+                <button class="btn success">Upgrade to PRO</button>
+            </div>
+        </section>
     </main>
     <script src="app.js"></script>
-    <!-- <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script> -->
+    <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
 </body>
 
 </html>
